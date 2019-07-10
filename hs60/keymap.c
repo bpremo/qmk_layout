@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTL,  KC_A,     KC_S,     KC_D,  KC_F,  KC_G,  KC_H,    KC_J,  KC_K,  KC_L,     KC_SCLN,  KC_QUOT,           KC_ENT, \
     KC_LSFT,            KC_Z,     KC_X,  KC_C,  KC_V,  KC_B,    KC_N,  KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,           KC_RSFT,\
     MO(1),    KC_LGUI,  KC_LALT,                       KC_SPC,                          KC_RALT,  KC_RGUI,  MO(2),   KC_RCTL),
-    
+
 // Fn1 Layer
 /* Layer 1: (FN / MOD Layer)
 * ,-----------------------------------------------------------------------------------------.
@@ -59,9 +59,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_END,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,\
     KC_TRNS,  KC_TRNS,  KC_TRNS,                                KC_TRNS,                                KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS),
 
+// Fn2 Layer
+/* Layer 2: (RBG Effects)
+* ,-----------------------------------------------------------------------------------------.
+* |     |     |     |     |     |     |     |     |     |     |     | BR- | BR+ |           |
+* |-----------------------------------------------------------------------------------------|
+* |      |     |     |     |     |     |     |      |      |     |     | SP- | SP+ |        |
+* |-----------------------------------------------------------------------------------------|
+* |          |     |     |      |     |    |     |     |     |      |     |     |           |
+* |-----------------------------------------------------------------------------------------|
+* |             |     | EF- | EF+ |     |     |     |     |     |     |     |               |
+* +-----------------------------------------------------------------------------------------+
+* |  MO(1) |       |      |                                   |      |      | MO(2) |       |
+* `-----------------------------------------------------------------------------------------'
+*/
 [2] = LAYOUT_60_ansi( /* Empty for dynamic keymaps */
     KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  BR_DEC,   BR_INC,   KC_TRNS,\
-    KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  ES_DEC,   KC_TRNS,  KC_TRNS,\
+    KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  ES_DEC,   ES_INC,   KC_TRNS,\
     KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  S1_DEC,   S1_INC,   S2_DEC,   S2_INC,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,            KC_TRNS,\
     KC_TRNS,            EF_DEC,   EF_INC,   H1_DEC,   H1_INC,   H2_DEC,   H2_INC,   BR_DEC,   BR_INC,   ES_DEC,   ES_INC,             KC_TRNS,\
     KC_VOLU,  KC_VOLD,  KC_MUTE,                                KC_TRNS,                                KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS),
